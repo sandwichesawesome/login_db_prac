@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>메인 페이지</h1>
+    <% if (user) { %>
+        <p>로그인 상태입니다.</p>
+        <a href="/profile">내 프로필 보기</a> | <a href="/logout">로그아웃</a>
+        <% } else { %>
+            <p>로그인되지 않았습니다.</p>
+            <a href="/login">로그인</a> | <a href="/register">회원가입</a>
+            <% } %>
+</body>
+
+</html>
